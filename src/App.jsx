@@ -56,8 +56,9 @@ const App = () => {
       <TrustedBy/>
       <Services />
       <OurWork/>
-      <ContactUs />
       <Teams/>
+      <ContactUs />
+      
       <Footer theme={theme} />
 
       {/* --- Cursor Elements (Separated) --- */}
