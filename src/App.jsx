@@ -5,6 +5,9 @@ import Services from './components/Services';
 import ContactUs from './components/ContactUs';
 import { Toaster } from 'react-hot-toast'
 import Footer from './components/Footer';
+import TrustedBy from './components/TrustedBy';
+import OurWork from './components/OurWork';
+import Teams from './components/Teams';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -50,8 +53,11 @@ const App = () => {
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
+      <TrustedBy/>
       <Services />
+      <OurWork/>
       <ContactUs />
+      <Teams/>
       <Footer theme={theme} />
 
       {/* --- Cursor Elements (Separated) --- */}
